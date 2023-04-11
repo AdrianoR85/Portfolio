@@ -1,44 +1,37 @@
-.pages-wrapper {
+main {
     width: 100%;
-    padding-bottom: 8rem;
 }
 
-.pages-wrapper .page {
-    min-height: 100vh;
+main .page {
     position: fixed;
-    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    min-height: 100vh;
+
+    padding: 2rem;
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: beige;
 
-    transform: translateY(400%);
-    transition: transform 0.8s ease-in-out;
+    transform: translateY(200%);
 }
 
-.pages-wrapper .page.show {
+main .page.show{
     transform: translateY(0);
 }
+
 
 /* ---- -------- min-width  680px ------------ */
 
 @media (min-width: 68rem) {
-    .pages-wrapper .page {
-        transform: translateX(400%);
+    main .page {
+        left: 26rem;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
-}
 
-#home {
-    background-color: aqua;
-}
-
-#about {
-    background-color: brown
-}
-
-#portfolio {
-    background-color: blue;
-}
-
-#contact {
-    background-color: cadetblue;
+    .page__content {
+        padding-right: 26rem;
+    }
 }
