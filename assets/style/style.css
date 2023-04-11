@@ -1,0 +1,39 @@
+@import url(navegation.css);
+@import url(pages.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color-100: #393939;
+    --bg-color-200: #393939;
+    --bg-color-300: #151515;
+
+    --text-color-50: #FFFFFF;
+    --text-color-100: #e9e9e9;
+    --text-color-150: #27AEDB;
+    --text-color-200: #151515;
+
+    --font-type-100: 'Allison', cursive;
+    --font-type-200: 'Montserrat', sans-serif;
+    --font-type-300: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--bg-color-100);
+
+}

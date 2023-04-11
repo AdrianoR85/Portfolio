@@ -1,0 +1,44 @@
+.pages-wrapper {
+    width: 100%;
+    padding-bottom: 8rem;
+}
+
+.pages-wrapper .page {
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: beige;
+
+    transform: translateY(400%);
+    transition: transform 0.8s ease-in-out;
+}
+
+.pages-wrapper .page.show {
+    transform: translateY(0);
+}
+
+/* ---- -------- min-width  680px ------------ */
+
+@media (min-width: 68rem) {
+    .pages-wrapper .page {
+        transform: translateX(400%);
+    }
+}
+
+#home {
+    background-color: aqua;
+}
+
+#about {
+    background-color: brown
+}
+
+#portfolio {
+    background-color: blue;
+}
+
+#contact {
+    background-color: cadetblue;
+}
