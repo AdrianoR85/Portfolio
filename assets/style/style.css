@@ -1,6 +1,7 @@
 @import url(navegation.css);
 @import url(pages.css);
 @import url(home.css);
+@import url(portfolio.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
@@ -16,6 +17,7 @@
 :root {
     font-size: 62.5%;
 
+    --bg-color-50: #e9e9e9;
     --bg-color-100: #393939;
     --bg-color-200: #393939;
     --bg-color-300: #151515;
@@ -32,8 +34,6 @@
 
 body {
     font-size: 1.6rem;
-    width: 100%;
-    height: 100vh;
 
     background-color: var(--bg-color-100);
 
