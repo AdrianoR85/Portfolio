@@ -14,6 +14,7 @@ main .page {
     overflow-x:hidden;
 
     transform: translateY(200%);
+    transition: transform .6s ease-in-out;
 }
 
 main .page.show{
@@ -72,10 +73,14 @@ main .page.show{
         left: 26rem;
         overflow-y: auto;
         overflow-x: hidden;
+
+        padding-left: 10rem;
+
+        transform: translateX(200%);
     }
 
     .page__content  {
-        /* padding-right: 26rem; */
+        padding-right: 26rem;
         width: 100%;
     }
 
@@ -85,12 +90,11 @@ main .page.show{
     }
 
     .page__content .page__title {
-        padding: 5rem;
+        padding: 5rem 0;
         font-size: 3rem;
     }
 
     .page__content .page__title::after {
-        left: 5rem;
         top: 9.5rem;
         width: 5rem;
     }
