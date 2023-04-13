@@ -3,6 +3,7 @@
 @import url(home.css);
 @import url(portfolio.css);
 @import url(contact.css);
+@import url(about.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
@@ -38,4 +39,12 @@ body {
 
     background-color: var(--bg-color-100);
 
+}
+
+/* ---- -------- min-width  680px ------------ */
+
+@media (min-width: 68rem) {
+    .padding-left-20 {
+        padding-left: 2rem;
+    }
 }

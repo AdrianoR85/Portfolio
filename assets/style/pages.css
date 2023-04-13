@@ -10,7 +10,7 @@ main .page {
 
     height: 100vh;
 
-    padding: 2rem;
+    padding: 2rem 2rem 8rem;
     overflow-x:hidden;
 
     transform: translateY(200%);
@@ -60,6 +60,11 @@ main .page.show{
 /* ---- -------- min-width  360px ------------ */
 
 @media (min-width: 36rem) {
+    main .page {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
     .page__content .page__title {
         font-size: 2rem;
     }
@@ -74,13 +79,11 @@ main .page.show{
         overflow-y: auto;
         overflow-x: hidden;
 
-        padding-left: 10rem;
-
         transform: translateX(200%);
     }
 
     .page__content  {
-        padding-right: 26rem;
+        /* padding-right: 26rem; */
         width: 100%;
     }
 
