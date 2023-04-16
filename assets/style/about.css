@@ -2,8 +2,11 @@
     color: var(--text-color-100);
 }
 
-.about__introduce h3 {
+.about__introduce h3,
+.about__timeline h3,
+.about__info .skills h3 {
     font-size: 1.6rem;
+    color: var(--text-color-100);
 }
 
 .about__introduce h3 span {
@@ -35,6 +38,7 @@
     padding: 1rem 0;
     font-weight: 600;
 }
+
 .about__info .info-item span {
     font-weight: 400;
     margin-left: .8rem;
@@ -54,6 +58,75 @@
 
 }
 
+.about__timeline {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+.education,
+.jobs {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about__timeline-box {
+    background-color: var(--text-color-100);
+    padding: 2rem 1.4rem 1.4rem 1.4rem;
+    border-radius: .8rem;
+    margin-top: 1.6rem;
+}
+
+.circle-dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--text-color-150);
+}
+
+.about__timeline-box__item {
+    position: relative;
+    left: 0;
+    padding-left: 3rem;
+    padding-bottom: 3.5rem;
+
+    display: grid;
+    gap: .8rem;
+}
+
+.about__timeline-box__item::before {
+    content: "";
+    width: .1rem;
+    height: 100%;
+    position: absolute;
+    background-color: var(--text-color-150);
+    left: .7rem;
+    top: 0;
+}
+
+.about__timeline-box__item h4 {
+    font-size: 1.4rem;
+}
+
+.about__timeline-box__item h4 i {
+    margin-right: .8rem;
+}
+
+.about__timeline-box__item h5 {
+    font-size: 1.6rem;
+}
+
+.about__timeline-box__item p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
 /* ---- -------- min-width  360px ------------ */
 
 @media (min-width: 36rem) {
@@ -66,12 +139,24 @@
     .about__info .personal {
         flex: 0 0 40%;
     }
+
+    .about__timeline {
+        flex-direction: row;
+    }
+
+    .education,
+    .jobs {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 /* ---- -------- min-width  680px ------------ */
 
 @media (min-width: 68rem) {
-    .about__introduce h3 {
+    .about__introduce h3,
+    .about__timeline h3,
+    .about__info .skills h3 {
         font-size: 2rem;
     }
 
@@ -90,4 +175,26 @@
         flex: 0 0 60%;
     }
 
+    .about__timeline {
+        margin-top: 4rem;
+        justify-content: space-between;
+    }
+    .about__timeline-box {
+        padding: 3rem 1.6rem 1.6rem 1.6rem;
+    }
+
+    .education,
+    .jobs {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .about__timeline-box__item h4,
+    .about__timeline-box__item p  {
+        font-size: 1.6rem;
+    }
+
+    .about__timeline-box__item h5 {
+        font-size: 1.8rem;
+    }
 }
