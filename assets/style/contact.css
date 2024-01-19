@@ -15,6 +15,10 @@
     gap: 3rem;
 }
 
+.contant__email a {
+    color: var(--text-color-100);
+}
+
 
 /* ---- -------- min-width  680px ------------ */
 
